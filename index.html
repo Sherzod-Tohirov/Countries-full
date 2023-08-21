@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/normalize.css"><link rel="stylesheet" type="text/css" href="./css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper">
+          <a class="logo" href="./index.html">
+            <img class="logo__img" src="./images/logo.svg" width="233" height="19" alt="countries's logo">
+          </a>
+          <button type="button" class="site-header__btn">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+    <main class="site-body">
+      <section class="countries">
+        <div class="container">
+          <h1 class="visually-hidden">Countries details</h1>
+          <div class="countries__wrapper">
+            <h2 class="visually-hidden">Countries information</h2>
+            <div class="countries__search-wrapper">
+              <form class="countries__form" method="GET" autocomplete="off">
+                <div class="countries__search-input-wrapper">
+                  <input class="countries__search-input" type="search" name="query" placeholder="Search for a country…" aria-label="">
+                </div>
+                <select class="countries__filter js-filter" name="filter_query">
+                  <option value="" hidden>Filter by Region</option>
+                  <option value="all">All Regions</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Americas">Americas</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Oceania">Oceania</option>
+                </select>
+              </form>
+            </div>
+            <ul class="countries__list js-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
