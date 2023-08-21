@@ -108,7 +108,7 @@ function darkmodeEnabled(elHeaderBtn, elSiteHeader, siteBody, elSearchInput, elS
 	add_dark_mode(elCountryName, 'dark-mode-text-color');
 	add_dark_mode(elCountryDesc, 'dark-mode-text-color');
 	add_dark_mode(elCountryText, 'dark-mode-text-color');
-	if(elLogoImg.src != "file:///D:/Farobiy/Forobiy/Original%20files/Countries/images/logo.svg") {
+	if(!elLogoImg.src.endsWith('/images/logo.svg')) {
 		 elLogoImg.src = "./images/logo.svg";
 	}else {
 		 elLogoImg.src = "./images/logodarkmode.svg";

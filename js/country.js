@@ -129,10 +129,10 @@ function renderCountryInfo(data, list, title) {
     console.log(elBackLink);
     elBackLink.classList.toggle('country-info__back-link--dark-mode');
 
-    if (elLogoImg.src != "file:///D:/Farobiy/Forobiy/Original%20files/Countries/images/logo.svg") {
-		elLogoImg.src = "../images/logo.svg";
-	} else {
-		elLogoImg.src = "../images/logodarkmode.svg";
-	}
+    if(!elLogoImg.src.endsWith('/images/logo.svg')) {
+      elLogoImg.src = "../images/logo.svg";
+   }else {
+      elLogoImg.src = "../images/logodarkmode.svg";
+   }
 
  }
